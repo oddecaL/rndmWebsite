@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Energy Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Collapsible Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <h2>Energy Summary</h2>
+            <button class="close-btn" onclick="toggleSidebar()">X</button>
+            <div id="energyStats">
+                <p><strong>Production:</strong> <span id="production">0</span> kW</p>
+                <p><strong>Consumption:</strong> <span id="consumption">0</span> kW</p>
+            </div>
+            <h3>Recommendations</h3>
+            <p id="recommendation"></p>
+        </div>
+
+        <!-- Main Map Section -->
+        <div class="main">
+            <h1>Energy Management Map</h1>
+            <button class="open-btn" onclick="toggleSidebar()">Show Stats</button>
+            <div class="map-grid" id="mapGrid">
+                <!-- Grid for input units -->
+                <!-- Dynamically generated using JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
